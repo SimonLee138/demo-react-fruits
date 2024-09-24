@@ -15,9 +15,8 @@ export default function ProductDetail() {
                     return element.id === parseInt(params.id)
                 })
                 setProductDetail(productInfo)
-                console.log(productInfo)
             })
-    }, [])
+    }, [params.id])
     return (
         <div>
             {

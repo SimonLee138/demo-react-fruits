@@ -28,7 +28,7 @@ export default function Checkout() {
                 <div>
                     <div id="cartSection">
                         {
-                            cartItems.map((product) => {
+                            cartItems.map(product => (
                                 <div key={product.id}>
                                     {product.name}
                                     {product.description}
@@ -36,7 +36,7 @@ export default function Checkout() {
                                     {product.quantity}
                                     <QuantityBtn productInfo={product}></QuantityBtn>
                                 </div>
-                            })
+                            ))
                         }
                     </div>
                     <div id="checkoutSection">
